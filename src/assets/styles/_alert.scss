@@ -1,0 +1,53 @@
+@use 'variables' as *;
+
+/* alert.css */
+.alert {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    border-radius: 10px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    animation: fadeSlide 0.3s ease;
+}
+  
+.alert-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  
+.alert-icon {
+    font-size: 18px;
+}
+  
+.alert-close {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+}
+  
+.alert-success {
+    background: #e6f9f0;
+    color: #0f5132;
+    border: 1px solid #b7ebd3;
+}
+  
+.alert-error {
+    background: #fde8e8;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+}
+  
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

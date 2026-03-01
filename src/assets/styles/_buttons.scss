@@ -1,0 +1,50 @@
+@use 'variables' as *;
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-primary {
+    background: transparent;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+
+    &:hover {
+        background: $primary-color;
+        color: white;
+    }
+}
+
+.btn-warning {
+    background: transparent;
+    border: 1px solid $warning-color;
+    color: $warning-color;
+
+    &:hover {
+        background: $warning-color;
+        color: white;
+    }
+}
+
+.btn-danger {
+    background: $danger-color;
+
+    &:hover {
+        background: $danger-hover;
+    }
+}
+
+.btn-secondary {
+        background: #64748b;
+        color: white;
+    }
+    
+    .btn-secondary:hover {
+        opacity: 0.85;
+}
